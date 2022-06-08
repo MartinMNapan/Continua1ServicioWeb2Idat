@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-@Table(name = "malla_curricular")
+@Table(name = "malla")
 @Entity
 public class MallaCurricular {
 	
@@ -21,7 +21,7 @@ public class MallaCurricular {
 	private Integer año;
 	
 	//Relacion de uno auno
-	@OneToOne(mappedBy = "universidad")
+	@OneToOne(mappedBy = "malla")
 	private Universidad universidad;
 	
 	//Relacion de muchos a uno
